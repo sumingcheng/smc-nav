@@ -14,9 +14,9 @@ export default function DashboardHeader({ itemCount }: DashboardHeaderProps) {
         <div className="flex items-center space-x-2">
           <div className="w-1 h-1 bg-white rounded-full" />
           <h3 className="text-sm font-medium text-white">我的收藏</h3>
+          <span className="text-xs text-[#a0a0a0]">{itemCount} 项</span>
         </div>
         <div className="flex items-center space-x-2">
-          <span className="text-xs text-[#a0a0a0]">{itemCount} 项</span>
           {itemCount > 0 && (
             <AlertDialog.Root>
               <AlertDialog.Trigger asChild>

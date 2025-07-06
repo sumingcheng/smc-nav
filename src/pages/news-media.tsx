@@ -9,8 +9,8 @@ const geistSans = Geist({
   subsets: ['latin'],
 });
 
-export default function Home() {
-  const currentCategory = categories.find((cat) => cat.id === 'dashboard');
+export default function NewsMedia() {
+  const currentCategory = categories.find((cat) => cat.id === 'news-media');
 
   return (
     <div className={`${geistSans.className} min-h-screen bg-black text-[#e7e9ea] relative overflow-hidden`}>
@@ -38,4 +38,4 @@ export default function Home() {
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-cyan-400/50 to-transparent z-20" />
     </div>
   );
-}
+} 

@@ -9,7 +9,7 @@ const geistSans = Geist({
   subsets: ['latin'],
 });
 
-export default function Home() {
+export default function Dashboard() {
   const currentCategory = categories.find((cat) => cat.id === 'dashboard');
 
   return (
@@ -38,4 +38,4 @@ export default function Home() {
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-cyan-400/50 to-transparent z-20" />
     </div>
   );
-}
+} 

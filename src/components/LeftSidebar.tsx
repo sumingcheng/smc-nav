@@ -1,12 +1,12 @@
-import { Category } from '../types';
-import { useState } from 'react';
-import { RiGithubLine, RiCopperCoinLine, RiFileCopyLine, RiCheckLine } from 'react-icons/ri';
 import * as Dialog from '@radix-ui/react-dialog';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { useState } from 'react';
 import toast from 'react-hot-toast';
+import { RiCheckLine, RiCopperCoinLine, RiFileCopyLine, RiGithubLine } from 'react-icons/ri';
+import { Category } from '../types';
 
 interface LeftSidebarProps {
-  activeCategory: string;
-  setActiveCategory: (category: string) => void;
   categories: Category[];
 }
 
@@ -20,10 +20,20 @@ const iconColors: Record<string, string> = {
   'crypto-bloggers': '#9C6EFF', // 紫色 - 博主
 };
 
-export default function LeftSidebar({ activeCategory, setActiveCategory, categories }: LeftSidebarProps) {
+export default function LeftSidebar({ categories }: LeftSidebarProps) {
+  const router = useRouter();
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [currentLanguage, setCurrentLanguage] = useState<'zh' | 'en'>('zh');
   const [copied, setCopied] = useState(false);
+  
+  // 获取当前活跃的分类
+  const getActiveCategory = () => {
+    const path = router.pathname;
+    if (path === '/') return 'dashboard';
+    return path.substring(1); // 移除开头的 '/'
+  };
+  
+  const activeCategory = getActiveCategory();
 
   const solanaAddress = '6JqeXLFe2W6fVzX8awKnSVJoda13EzQwmQzSW7eynpUT';
 
@@ -88,9 +98,9 @@ export default function LeftSidebar({ activeCategory, setActiveCategory, categor
           {categories.map((category) => {
             const IconColor = iconColors[category.id] || '#00ffff';
             return (
-              <button
+              <Link
                 key={category.id}
-                onClick={() => setActiveCategory(category.id)}
+                href={category.id === 'dashboard' ? '/' : `/${category.id}`}
                 className={`w-full flex items-center ${
                   isCollapsed ? 'justify-center p-2' : 'space-x-3 px-3 py-2'
                 } rounded-md text-left transition-all duration-200 transform group ${
@@ -108,7 +118,7 @@ export default function LeftSidebar({ activeCategory, setActiveCategory, categor
                 </div>
                 {!isCollapsed && <span className="font-medium text-sm truncate">{category.name}</span>}
                 {activeCategory === category.id && <div className="absolute left-0 w-1 h-6 rounded-r" style={{ backgroundColor: IconColor }} />}
-              </button>
+              </Link>
             );
           })}
         </nav>
