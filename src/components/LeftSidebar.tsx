@@ -92,7 +92,6 @@ export default function LeftSidebar({ activeCategory, setActiveCategory, categor
 
       {/* 分类导航 */}
       <div className={`${isCollapsed ? 'p-2' : 'p-3'} flex-1`}>
-        {!isCollapsed && <h2 className="text-xs font-semibold text-cyan-400 mb-3 uppercase tracking-wider">Navigation</h2>}
         <nav className="space-y-1">
           {categories.map((category) => {
             const IconColor = iconColors[category.id] || '#00ffff';
