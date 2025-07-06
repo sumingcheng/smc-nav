@@ -1,11 +1,11 @@
 import { Category } from '../types';
 import { RiDashboard3Line, RiBarChart2Line, RiNewspaperLine, RiCopperCoinLine, RiUser3Line, RiGraduationCapLine } from 'react-icons/ri';
 
-// 网站数据 - 直接使用币圈老游子的描述
+// 网站数据
 export const categories: Category[] = [
   {
     id: 'dashboard',
-    name: '看板',
+    name: '个人看板',
     description: '自定义自己的导航看板',
     icon: <RiDashboard3Line className="text-lg" />,
     subcategories: [], // 看板不需要子分类
@@ -256,8 +256,8 @@ export const categories: Category[] = [
   },
   {
     id: 'crypto-bloggers',
-    name: '加密博主',
-    description: '知名加密货币博主和意见领袖',
+    name: 'KOL',
+    description: '知名加密圈KOL',
     icon: <RiUser3Line className="text-lg" />,
     subcategories: [
       {
