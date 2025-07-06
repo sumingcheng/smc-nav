@@ -1,5 +1,5 @@
-import * as Avatar from '@radix-ui/react-avatar';
 import * as Tooltip from '@radix-ui/react-tooltip';
+import Image from 'next/image';
 import { useDashboardStore } from '../store/dashboardStore';
 import { isReadonlyCategory } from '../constants/categories';
 import toast from 'react-hot-toast';
@@ -69,14 +69,28 @@ export default function WebsiteCard({ website, categoryId, isRounded = false, sh
 
       <a href={website.url} target="_blank" rel="noopener noreferrer" className="block">
         <div className="flex items-center space-x-2">
-          <Avatar.Root
-            className={`inline-flex h-10 w-10 select-none items-center justify-center overflow-hidden ${
+          <div
+            className={`relative inline-flex h-10 w-10 select-none items-center justify-center overflow-hidden ${
               isRounded ? 'rounded-full' : 'rounded-md'
             } bg-gray-800/80 border border-white/20`}
           >
-            <Avatar.Image className={`h-full w-full ${isRounded ? 'rounded-full' : 'rounded-md'} object-cover`} src={website.icon} alt={website.name} />
-            <Avatar.Fallback className="text-sm leading-1 flex h-full w-full items-center justify-center bg-gray-700 text-white">{website.name.charAt(0)}</Avatar.Fallback>
-          </Avatar.Root>
+            <Image
+              src={website.icon}
+              alt={website.name}
+              width={40}
+              height={40}
+              className={`h-full w-full ${isRounded ? 'rounded-full' : 'rounded-md'} object-cover`}
+              loading="lazy"
+              onError={(e) => {
+                // 如果图片加载失败，显示文字fallback
+                const target = e.target as HTMLImageElement;
+                const parent = target.parentElement;
+                if (parent) {
+                  parent.innerHTML = `<div class="text-sm leading-1 flex h-full w-full items-center justify-center bg-gray-700 text-white">${website.name.charAt(0)}</div>`;
+                }
+              }}
+            />
+          </div>
           <div className="flex-1 min-w-0">
             <h4 className="text-xs font-medium text-white group-hover:text-white transition-colors truncate mb-1">{website.name}</h4>
             <p className="text-xs text-[#a0a0a0] leading-relaxed">{website.description}</p>
