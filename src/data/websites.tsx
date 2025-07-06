@@ -18,7 +18,7 @@ export const categories: Category[] = [
     subcategories: [
       {
         id: 'beginner-guide',
-        name: '入门指南',
+        name: '链上入门',
         description: '区块链基础知识教程',
         websites: [
           {

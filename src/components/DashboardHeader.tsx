@@ -20,7 +20,7 @@ export default function DashboardHeader({ itemCount }: DashboardHeaderProps) {
           {itemCount > 0 && (
             <AlertDialog.Root>
               <AlertDialog.Trigger asChild>
-                <button className="text-xs text-red-400 hover:text-red-300 transition-colors duration-200 hover:underline">清空</button>
+                <button className="text-xs text-red-400 hover:text-red-300 transition-colors duration-200 hover:underline cursor-pointer">清空</button>
               </AlertDialog.Trigger>
               <AlertDialog.Portal>
                 <AlertDialog.Overlay className="bg-black/60 data-[state=open]:animate-overlayShow fixed inset-0 z-50" />
