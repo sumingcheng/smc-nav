@@ -186,7 +186,7 @@ export const categories: Category[] = [
   },
   {
     id: 'trading-tools',
-    name: '打狗',
+    name: '链上工具',
     description: '交易工具与安全分析平台',
     icon: <RiCopperCoinLine className="text-lg" />,
     subcategories: [
