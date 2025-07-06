@@ -49,22 +49,14 @@ export default function LeftSidebar({ activeCategory, setActiveCategory, categor
       <div className={`${isCollapsed ? 'p-2' : 'p-3'} flex items-center ${isCollapsed ? 'justify-center' : 'justify-between'}`}>
         {/* Logo - 仅在展开状态显示 */}
         {!isCollapsed && (
-          <div className="flex items-center space-x-3">
-            {/* 六边形 Logo */}
-            <div className="relative w-7 h-6">
-              <div
-                className="w-full h-full bg-gradient-to-br from-[#00ffff] via-[#0080ff] to-[#8b5cf6] shadow-lg shadow-cyan-400/20"
-                style={{
-                  clipPath: 'polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)',
-                }}
-              >
-                <div className="w-full h-full flex items-center justify-center">
-                  <span className="text-black font-bold text-xs drop-shadow-sm">🚀</span>
-                </div>
-              </div>
+          <div className="flex items-center space-x-2 ml-1">
+            {/* 竖线 Logo */}
+            <div className="flex items-center space-x-1">
+              <div className="w-1 h-6 bg-gradient-to-b from-[#00ffff] via-[#0080ff] to-[#8b5cf6] rounded-full shadow-sm shadow-cyan-400/20"></div>
+              <div className="w-0.5 h-4 bg-gradient-to-b from-[#8b5cf6] to-[#00ffff] rounded-full opacity-60"></div>
             </div>
             <div className="flex flex-col">
-              <span className="text-[#e7e9ea] font-bold text-sm tracking-wide">Dogfight Hub</span>
+              <span className="text-[#e7e9ea] font-semibold text-sm tracking-wide">Dogfight Hub</span>
               <div className="h-[1px] w-full bg-gradient-to-r from-[#00ffff] to-transparent"></div>
             </div>
           </div>
