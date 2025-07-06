@@ -13,8 +13,8 @@ interface RightContentProps {
 
 // 图标颜色映射 - 与左侧菜单栏保持一致
 const iconColors: Record<string, string> = {
-  'dashboard': '#00ffff', // 青色 - 看板
-  'tutorial': '#FFA500', // 橙色 - 新手教程
+  dashboard: '#00ffff', // 青色 - 看板
+  tutorial: '#FFA500', // 橙色 - 新手教程
   'chain-data': '#4AFF8C', // 绿色 - 数据
   'news-media': '#FFD166', // 黄色 - 新闻
   'trading-tools': '#FFD700', // 金色 - 打狗
@@ -60,14 +60,16 @@ export default function RightContent({ currentCategory }: RightContentProps) {
     <div className="flex-1 min-w-0 bg-[#0e1015] p-4 overflow-y-auto">
       {/* 页面标题 */}
       <div className="mb-4 flex items-center">
-        <div className="mr-2" style={{ color: iconColor }}>{currentCategory.icon}</div>
+        <div className="mr-2" style={{ color: iconColor }}>
+          {currentCategory.icon}
+        </div>
         <div>
           <h1 className="text-sm font-medium text-white">{currentCategory.name}</h1>
           <p className="text-xs text-[#a0a0a0]">{currentCategory.description}</p>
         </div>
       </div>
       <Separator.Root className="bg-white/20 data-[orientation=horizontal]:h-px data-[orientation=horizontal]:w-full mb-4" />
-      
+
       {/* 渲染对应的分类内容 */}
       {renderContent()}
     </div>

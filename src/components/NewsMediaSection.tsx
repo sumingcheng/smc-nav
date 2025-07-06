@@ -23,11 +23,7 @@ export default function NewsMediaSection({ category }: NewsMediaSectionProps) {
             {/* 网站列表 */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2">
               {subcategory.websites.map((website, index) => (
-                <WebsiteCard
-                  key={index}
-                  website={website}
-                  categoryId={category.id}
-                />
+                <WebsiteCard key={index} website={website} categoryId={category.id} />
               ))}
             </div>
           </div>

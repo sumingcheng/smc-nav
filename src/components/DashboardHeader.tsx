@@ -20,19 +20,13 @@ export default function DashboardHeader({ itemCount }: DashboardHeaderProps) {
           {itemCount > 0 && (
             <AlertDialog.Root>
               <AlertDialog.Trigger asChild>
-                <button className="text-xs text-red-400 hover:text-red-300 transition-colors duration-200 hover:underline">
-                  清空
-                </button>
+                <button className="text-xs text-red-400 hover:text-red-300 transition-colors duration-200 hover:underline">清空</button>
               </AlertDialog.Trigger>
               <AlertDialog.Portal>
                 <AlertDialog.Overlay className="bg-black/60 data-[state=open]:animate-overlayShow fixed inset-0 z-50" />
                 <AlertDialog.Content className="data-[state=open]:animate-contentShow fixed top-[50%] left-[50%] max-h-[85vh] w-[90vw] max-w-[500px] translate-x-[-50%] translate-y-[-50%] rounded-lg bg-[#1A1C2F] p-6 shadow-lg focus:outline-none z-50 border border-white/10">
-                  <AlertDialog.Title className="text-white text-lg font-medium mb-4">
-                    清空看板
-                  </AlertDialog.Title>
-                  <AlertDialog.Description className="text-[#a0a0a0] text-sm mb-6">
-                    确定要清空看板吗？此操作不可恢复，所有 {itemCount} 个项目都将被移除。
-                  </AlertDialog.Description>
+                  <AlertDialog.Title className="text-white text-lg font-medium mb-4">清空看板</AlertDialog.Title>
+                  <AlertDialog.Description className="text-[#a0a0a0] text-sm mb-6">确定要清空看板吗？此操作不可恢复，所有 {itemCount} 个项目都将被移除。</AlertDialog.Description>
                   <div className="flex justify-end gap-3">
                     <AlertDialog.Cancel asChild>
                       <button className="bg-transparent hover:bg-white/10 text-[#a0a0a0] hover:text-white px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200">
@@ -40,10 +34,7 @@ export default function DashboardHeader({ itemCount }: DashboardHeaderProps) {
                       </button>
                     </AlertDialog.Cancel>
                     <AlertDialog.Action asChild>
-                      <button 
-                        className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200"
-                        onClick={clearDashboard}
-                      >
+                      <button className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200" onClick={clearDashboard}>
                         确定清空
                       </button>
                     </AlertDialog.Action>
@@ -56,4 +47,4 @@ export default function DashboardHeader({ itemCount }: DashboardHeaderProps) {
       </div>
     </div>
   );
-} 
+}

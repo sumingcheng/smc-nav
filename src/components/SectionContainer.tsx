@@ -14,9 +14,7 @@ export default function SectionContainer({ title, children }: SectionContainerPr
           <h3 className="text-sm font-medium text-white">{title}</h3>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2">
-        {children}
-      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2">{children}</div>
     </div>
   );
-} 
+}

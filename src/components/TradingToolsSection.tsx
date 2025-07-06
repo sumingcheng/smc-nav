@@ -9,20 +9,14 @@ interface TradingToolsSectionProps {
 
 export default function TradingToolsSection({ category }: TradingToolsSectionProps) {
   // 合并所有网站到一个列表
-  const allWebsites = category.subcategories.flatMap(subcategory => 
-    subcategory.websites.map(website => ({ ...website, subcategory: subcategory.name }))
-  );
+  const allWebsites = category.subcategories.flatMap((subcategory) => subcategory.websites.map((website) => ({ ...website, subcategory: subcategory.name })));
 
   return (
     <Tooltip.Provider>
       <div className="space-y-3">
         <SectionContainer title="交易工具">
           {allWebsites.map((website, index) => (
-            <WebsiteCard
-              key={index}
-              website={website}
-              categoryId={category.id}
-            />
+            <WebsiteCard key={index} website={website} categoryId={category.id} />
           ))}
         </SectionContainer>
       </div>
