@@ -1,7 +1,5 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   reactStrictMode: true,
   
   // 静态导出配置
@@ -38,4 +36,4 @@ const nextConfig: NextConfig = {
   assetPrefix: process.env.NODE_ENV === 'production' ? '/dogfight-hub/' : '',
 };
 
-export default nextConfig;
+module.exports = nextConfig; 
