@@ -2,8 +2,10 @@ name: Deploy to GitHub Pages
 
 on:
   push:
+    branches: ['main']
     tags:
       - 'v*' # 匹配所有以v开头的tag，如v1.0.0
+  workflow_dispatch: # 允许手动触发
 
 # 设置GITHUB_TOKEN权限
 permissions:
@@ -27,7 +29,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '18'
-          cache: 'npm'
+          cache: 'pnpm'
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 8
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -36,10 +43,10 @@ jobs:
           static_site_generator: next
 
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Build with Next.js
-        run: npm run build
+        run: pnpm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
