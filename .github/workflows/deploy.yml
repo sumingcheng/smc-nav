@@ -3,9 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: ['main']
-    tags:
-      - 'v*' # 匹配所有以v开头的tag，如v1.0.0
-  workflow_dispatch: # 允许手动触发
+  workflow_dispatch:
 
 # 设置GITHUB_TOKEN权限
 permissions:
@@ -15,7 +13,7 @@ permissions:
 
 # 允许单个并发部署
 concurrency:
-  group: 'pages'
+  group: "pages"
   cancel-in-progress: false
 
 jobs:
@@ -25,25 +23,23 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 8
-
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
-          cache: 'pnpm'
+          node-version: "20"
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
         with:
-          # 自动配置base path
           static_site_generator: next
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
 
       - name: Build with Next.js
         run: pnpm run build
@@ -56,6 +52,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     needs: build
+    if: github.ref == 'refs/heads/main'
     steps:
       - name: Deploy to GitHub Pages
         id: deployment

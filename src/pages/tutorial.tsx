@@ -2,7 +2,6 @@ import { Geist } from 'next/font/google';
 import LeftSidebar from '../components/LeftSidebar';
 import RightContent from '../components/RightContent';
 import { categories } from '../data';
-import '../styles/cyberpunk.css';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',

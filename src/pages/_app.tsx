@@ -1,4 +1,5 @@
 import '@/styles/globals.css';
+import '@/styles/cyberpunk.css';
 import 'nprogress/nprogress.css';
 import type { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
