@@ -30,6 +30,12 @@ export const tutorial: Category = {
           description: 'Web3基础知识科普，适合零基础用户',
           icon: 'https://www.google.com/s2/favicons?domain=youtube.com&sz=64',
         },
+        {
+          name: 'Blockchain 学习路线图',
+          url: 'https://roadmap.sh/blockchain',
+          description: '完整的区块链开发学习路径，从入门到专业开发者',
+          icon: 'https://www.google.com/s2/favicons?domain=roadmap.sh&sz=64',
+        },
       ],
     },
   ],

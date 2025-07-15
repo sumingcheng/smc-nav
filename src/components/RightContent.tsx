@@ -1,6 +1,5 @@
 import * as Separator from '@radix-ui/react-separator';
 import { Category } from '../types';
-import ChainDataSection from './ChainDataSection';
 import NewsMediaSection from './NewsMediaSection';
 import TradingToolsSection from './TradingToolsSection';
 import CryptoBloggersSection from './CryptoBloggersSection';
@@ -16,7 +15,6 @@ interface RightContentProps {
 const iconColors: Record<string, string> = {
   dashboard: '#00ffff', // 青色 - 看板
   tutorial: '#FFA500', // 橙色 - 新手教程
-  'chain-data': '#4AFF8C', // 绿色 - 数据
   'news-media': '#FFD166', // 黄色 - 新闻
   'trading-tools': '#FFD700', // 金色 - 打狗
   'crypto-bloggers': '#9C6EFF', // 紫色 - 博主
@@ -40,8 +38,6 @@ export default function RightContent({ currentCategory }: RightContentProps) {
     switch (currentCategory.id) {
       case 'tutorial':
         return <TutorialSection category={currentCategory} />;
-      case 'chain-data':
-        return <ChainDataSection category={currentCategory} />;
       case 'news-media':
         return <NewsMediaSection category={currentCategory} />;
       case 'trading-tools':
