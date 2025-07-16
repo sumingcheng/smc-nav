@@ -117,6 +117,12 @@ export const aiNavigation: Category = {
           description: 'Cursor MCP 服务器目录，浏览和添加 MCP 服务器',
           icon: 'https://www.google.com/s2/favicons?domain=cursor.directory&sz=64',
         },
+        {
+          name: 'VS Code MCP 服务器',
+          url: 'https://code.visualstudio.com/mcp',
+          description: 'VS Code 官方 MCP 服务器目录，扩展代理模式功能',
+          icon: 'https://www.google.com/s2/favicons?domain=code.visualstudio.com&sz=64',
+        },
       ],
     },
     {
