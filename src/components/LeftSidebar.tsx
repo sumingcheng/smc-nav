@@ -19,6 +19,7 @@ const iconColors: Record<string, string> = {
   'trading-tools': '#FFD700', // 金色 - 打狗
   'crypto-bloggers': '#9C6EFF', // 紫色 - 博主
   'ai-navigation': '#FF6B6B', // 红色 - AI 导航
+  'tools': '#4FC3F7', // 浅蓝色 - 工具
 };
 
 export default function LeftSidebar({ categories }: LeftSidebarProps) {

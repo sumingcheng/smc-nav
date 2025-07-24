@@ -6,6 +6,7 @@ import CryptoBloggersSection from './CryptoBloggersSection';
 import DashboardSection from './DashboardSection';
 import TutorialSection from './TutorialSection';
 import AINavigationSection from './AINavigationSection';
+import ToolsSection from './ToolsSection';
 
 interface RightContentProps {
   currentCategory: Category | undefined;
@@ -19,6 +20,7 @@ const iconColors: Record<string, string> = {
   'trading-tools': '#FFD700', // 金色 - 打狗
   'crypto-bloggers': '#9C6EFF', // 紫色 - 博主
   'ai-navigation': '#FF6B6B', // 红色 - AI 导航
+  'tools': '#4FC3F7', // 浅蓝色 - 工具
 };
 
 export default function RightContent({ currentCategory }: RightContentProps) {
@@ -46,6 +48,8 @@ export default function RightContent({ currentCategory }: RightContentProps) {
         return <CryptoBloggersSection category={currentCategory} />;
       case 'ai-navigation':
         return <AINavigationSection category={currentCategory} />;
+      case 'tools':
+        return <ToolsSection category={currentCategory} />;
       case 'dashboard':
         return <DashboardSection />;
       default:

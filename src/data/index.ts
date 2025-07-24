@@ -5,6 +5,7 @@ import { newsMedia } from './news-media'
 import { tradingTools } from './trading-tools'
 import { cryptoBloggers } from './crypto-bloggers'
 import { aiNavigation } from './ai-navigation'
+import { tools } from './tools'
 
 export const categories = [
   dashboard,
@@ -13,6 +14,7 @@ export const categories = [
   tradingTools,
   cryptoBloggers,
   aiNavigation,
+  tools,
 ]
 
-export { dashboard, tutorial, newsMedia, tradingTools, cryptoBloggers, aiNavigation } 
+export { dashboard, tutorial, newsMedia, tradingTools, cryptoBloggers, aiNavigation, tools } 
