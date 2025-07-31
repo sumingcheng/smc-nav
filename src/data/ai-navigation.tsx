@@ -144,5 +144,18 @@ export const aiNavigation: Category = {
         },
       ],
     },
+    {
+      id: 'rag',
+      name: 'RAG',
+      description: 'RAG',
+      websites: [
+        {
+          name: 'OpenRAG 基础中文介绍文档',
+          url: 'https://openrag.notion.site/OpenRAG-Base-Chinese-Introduction-299807c528bc46d9af0d9060dcd46f6b#ed69d920d29846b2bff2ee0be283acb9',
+          description: '检索增强生成技术指南',
+          icon: 'https://www.google.com/s2/favicons?domain=openrag.notion.site&sz=64',
+        },
+      ],
+    },
   ],
 };
