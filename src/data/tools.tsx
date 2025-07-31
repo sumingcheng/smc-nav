@@ -50,7 +50,19 @@ export const tools: Category = {
           description: 'IP 地址欺诈检测和状态测试，检查 IP 风险评分',
           icon: 'https://www.google.com/s2/favicons?domain=scamalytics.com&sz=64',
         },
+        {
+          name: 'Google AI Studio Status',
+          url: 'https://aistudio.google.com/status',
+          description: 'Google AI Studio 服务状态监控，查看 AI 开发平台的服务可用性',
+          icon: 'https://www.google.com/s2/favicons?domain=aistudio.google.com&sz=64',
+        },
+        {
+          name: 'Anthropic Claude Status',
+          url: 'https://status.anthropic.com/',
+          description: 'Claude AI 服务状态监控，查看 Claude API、Web 端和控制台的服务状态',
+          icon: 'https://www.google.com/s2/favicons?domain=status.anthropic.com&sz=64',
+        },
       ],
     },
   ],
-}; 
+};
