@@ -7,6 +7,7 @@ import { cryptoBloggers } from './crypto-bloggers'
 import { aiNavigation } from './ai-navigation'
 import { tools } from './tools'
 import { airdrop } from './airdrop'
+import { platformServices } from './platform-services'
 
 export const categories = [
   dashboard,
@@ -17,6 +18,7 @@ export const categories = [
   aiNavigation,
   tools,
   airdrop,
+  platformServices,
 ]
 
-export { dashboard, tutorial, newsMedia, tradingTools, cryptoBloggers, aiNavigation, tools, airdrop } 
+export { dashboard, tutorial, newsMedia, tradingTools, cryptoBloggers, aiNavigation, tools, airdrop, platformServices } 
