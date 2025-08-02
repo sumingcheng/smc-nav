@@ -64,13 +64,13 @@ export default function LeftSidebar({ categories }: LeftSidebarProps) {
       <div className={`${isCollapsed ? 'p-2' : 'p-3'} flex items-center ${isCollapsed ? 'justify-center' : 'justify-between'}`}>
         {/* Logo - 仅在展开状态显示 */}
         {!isCollapsed && (
-          <div className="flex items-center space-x-2 ml-1">
+          <div className="flex items-center space-x-2 ml-3">
             {/* 竖线 Logo */}
             <div className="flex items-center space-x-1">
               <div className="w-1 h-6 bg-gradient-to-b from-[#00ffff] via-[#0080ff] to-[#8b5cf6] rounded-full shadow-sm shadow-cyan-400/20"></div>
               <div className="w-0.5 h-4 bg-gradient-to-b from-[#8b5cf6] to-[#00ffff] rounded-full opacity-60"></div>
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col ml-2">
               <span className="text-[#e7e9ea] font-semibold text-sm tracking-wide">smc-nav</span>
               <div className="h-[1px] w-full bg-gradient-to-r from-[#00ffff] to-transparent"></div>
             </div>
