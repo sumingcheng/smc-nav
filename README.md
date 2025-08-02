@@ -1,4 +1,4 @@
-# 🚀 Dogfight Hub
+# 🚀 smc-nav
 
 > AI + WEB3 导航页
 

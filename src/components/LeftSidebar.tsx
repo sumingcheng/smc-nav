@@ -19,10 +19,10 @@ const iconColors: Record<string, string> = {
   'trading-tools': '#FFD700', // 金色 - 打狗
   'crypto-bloggers': '#9C6EFF', // 紫色 - 博主
   'ai-navigation': '#FF6B6B', // 红色 - AI 导航
-  'tools': '#4FC3F7', // 浅蓝色 - 工具
-  'airdrop': '#FFA500', // 橙色 - 空投撸白
-  'seo': '#3F51B5', // 靛蓝色 - SEO
-  'games': '#76FF03', // 亮绿色 - 游戏
+  tools: '#4FC3F7', // 浅蓝色 - 工具
+  airdrop: '#FFA500', // 橙色 - 空投撸白
+  seo: '#3F51B5', // 靛蓝色 - SEO
+  games: '#76FF03', // 亮绿色 - 游戏
 };
 
 export default function LeftSidebar({ categories }: LeftSidebarProps) {
@@ -30,14 +30,14 @@ export default function LeftSidebar({ categories }: LeftSidebarProps) {
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [currentLanguage, setCurrentLanguage] = useState<'zh' | 'en'>('zh');
   const [copied, setCopied] = useState(false);
-  
+
   // 获取当前活跃的分类
   const getActiveCategory = () => {
     const path = router.pathname;
     if (path === '/') return 'dashboard';
     return path.substring(1); // 移除开头的 '/'
   };
-  
+
   const activeCategory = getActiveCategory();
 
   const solanaAddress = '6JqeXLFe2W6fVzX8awKnSVJoda13EzQwmQzSW7eynpUT';
@@ -71,7 +71,7 @@ export default function LeftSidebar({ categories }: LeftSidebarProps) {
               <div className="w-0.5 h-4 bg-gradient-to-b from-[#8b5cf6] to-[#00ffff] rounded-full opacity-60"></div>
             </div>
             <div className="flex flex-col">
-              <span className="text-[#e7e9ea] font-semibold text-sm tracking-wide">Dogfight Hub</span>
+              <span className="text-[#e7e9ea] font-semibold text-sm tracking-wide">smc-nav</span>
               <div className="h-[1px] w-full bg-gradient-to-r from-[#00ffff] to-transparent"></div>
             </div>
           </div>
@@ -154,7 +154,7 @@ export default function LeftSidebar({ categories }: LeftSidebarProps) {
                   <RiCopperCoinLine className="text-2xl text-[#FFD700] mr-2" />
                   支持作者
                 </Dialog.Title>
-                <Dialog.Description className="text-[#a0a0a0] text-sm mb-6">如果 Dogfight Hub 对你有帮助，欢迎通过 Solana 打赏支持！</Dialog.Description>
+                <Dialog.Description className="text-[#a0a0a0] text-sm mb-6">如果 smc-nav 对你有帮助，欢迎通过 Solana 打赏支持！</Dialog.Description>
 
                 {/* Solana 地址卡片 */}
                 <div className="bg-black/40 rounded-lg p-4 border border-white/10 mb-4">
