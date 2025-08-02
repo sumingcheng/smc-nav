@@ -10,7 +10,7 @@ export const games: Category = {
     {
       id: 'strategy-games',
       name: '策略游戏',
-      description: '老红警，新玩法',
+      description: '',
       websites: [
         {
           name: 'Chrono Divide',

@@ -10,7 +10,7 @@ export const seo: Category = {
     {
       id: 'website-analytics',
       name: '网站分析',
-      description: '网站流量与竞争分析工具',
+      description: '',
       websites: [
         {
           name: 'SimilarWeb Pro',
@@ -35,7 +35,7 @@ export const seo: Category = {
     {
       id: 'website-performance',
       name: '网站性能与安全',
-      description: '网站加速、优化与安全防护工具',
+      description: '',
       websites: [
         {
           name: 'Cloudflare Dashboard',
