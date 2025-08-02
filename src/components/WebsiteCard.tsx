@@ -48,7 +48,7 @@ export default function WebsiteCard({ website, categoryId, isRounded = false, sh
             <button
               onClick={handleAddToDashboard}
               disabled={isInDashboard(website.name)}
-              className={`absolute -top-2 -right-2 w-7 h-7 rounded-full text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-center justify-center shadow-md ${
+              className={`absolute -top-2 -right-2 w-7 h-7 rounded-full text-base opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-center justify-center shadow-md ${
                 isInDashboard(website.name) ? 'bg-green-500 text-white cursor-not-allowed' : 'bg-blue-500 text-white hover:bg-blue-600 cursor-pointer'
               }`}
             >

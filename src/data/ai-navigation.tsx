@@ -3,7 +3,7 @@ import { RiRobot2Line } from 'react-icons/ri';
 
 export const aiNavigation: Category = {
   id: 'ai-navigation',
-  name: 'AI 导航',
+  name: 'LLM',
   description: 'AI 工具与服务导航',
   icon: <RiRobot2Line className="text-lg" />,
   subcategories: [

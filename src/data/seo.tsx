@@ -3,7 +3,7 @@ import { RiSearchLine } from 'react-icons/ri';
 
 export const seo: Category = {
   id: 'seo',
-  name: 'SEO 工具',
+  name: 'SEO',
   description: 'SEO分析与网站流量工具',
   icon: <RiSearchLine className="text-lg" />,
   subcategories: [
