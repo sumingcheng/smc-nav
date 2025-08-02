@@ -18,6 +18,12 @@ export const seo: Category = {
           description: '全面的网站流量分析、关键词研究和竞争情报平台',
           icon: 'https://www.google.com/s2/favicons?domain=similarweb.com&sz=64',
         },
+        {
+          name: 'Google Trends',
+          url: 'https://trends.google.com/trends/',
+          description: '分析搜索词热度趋势和流行度的工具，提供跨地区、语言和时间的比较数据',
+          icon: 'https://www.google.com/s2/favicons?domain=google.com&sz=64',
+        },
       ],
     },
   ],
