@@ -24,6 +24,12 @@ export const seo: Category = {
           description: '分析搜索词热度趋势和流行度的工具，提供跨地区、语言和时间的比较数据',
           icon: 'https://www.google.com/s2/favicons?domain=google.com&sz=64',
         },
+        {
+          name: 'Keyworddit',
+          url: 'https://www.highervisibility.com/seo/tools/keyworddit/',
+          description: '基于Reddit社区挖掘关键词的工具，助力内容营销与SEO策略',
+          icon: 'https://www.google.com/s2/favicons?domain=highervisibility.com&sz=64',
+        },
       ],
     },
   ],
