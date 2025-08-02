@@ -64,5 +64,75 @@ export const tools: Category = {
         },
       ],
     },
+    {
+      id: 'dev-reference',
+      name: '开发参考',
+      description: '开发者参考手册与速查表',
+      websites: [
+        {
+          name: 'Linux 命令手册',
+          url: 'https://wangchujiang.com/linux-command/',
+          description: '全面的 Linux 命令查询手册，包含612个常用命令详解',
+          icon: 'https://www.google.com/s2/favicons?domain=wangchujiang.com&sz=64',
+        },
+        {
+          name: 'Devhints',
+          url: 'https://devhints.io/',
+          description: '开发者速查表集合，涵盖多种编程语言和工具',
+          icon: 'https://www.google.com/s2/favicons?domain=devhints.io&sz=64',
+        },
+        {
+          name: '编程教程',
+          url: 'https://www.coderjia.cn/archives/dba3f94c-a021-468a-8ac6-e840f85867ea',
+          description: '编程学习资源与技术教程',
+          icon: 'https://www.google.com/s2/favicons?domain=coderjia.cn&sz=64',
+        },
+      ],
+    },
+    {
+      id: 'online-editors',
+      name: '在线编辑器',
+      description: '在线代码与数据编辑工具',
+      websites: [
+        {
+          name: 'JSON Crack',
+          url: 'https://jsoncrack.com/editor',
+          description: 'JSON 可视化编辑器，支持复杂 JSON 数据结构可视化',
+          icon: 'https://www.google.com/s2/favicons?domain=jsoncrack.com&sz=64',
+        },
+        {
+          name: 'SQLime',
+          url: 'https://sqlime.org/',
+          description: '在线 SQL 编辑器和数据库管理工具',
+          icon: 'https://www.google.com/s2/favicons?domain=sqlime.org&sz=64',
+        },
+      ],
+    },
+    {
+      id: 'config-tools',
+      name: '配置工具',
+      description: '服务器与应用配置工具',
+      websites: [
+        {
+          name: 'NGINX 配置工具',
+          url: 'https://www.digitalocean.com/community/tools/nginx',
+          description: 'DigitalOcean 提供的 NGINX 配置生成器，简化服务器配置过程',
+          icon: 'https://www.google.com/s2/favicons?domain=digitalocean.com&sz=64',
+        },
+      ],
+    },
+    {
+      id: 'image-tools',
+      name: '图像工具',
+      description: '在线图像处理工具',
+      websites: [
+        {
+          name: 'Cleanup.Pictures',
+          url: 'https://cleanup.pictures/',
+          description: 'AI 驱动的图像清理工具，可移除图片中不需要的元素',
+          icon: 'https://www.google.com/s2/favicons?domain=cleanup.pictures&sz=64',
+        },
+      ],
+    },
   ],
 };
