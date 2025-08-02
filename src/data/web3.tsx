@@ -7,109 +7,33 @@ export const web3: Category = {
   description: '区块链和Web3生态资源导航',
   icon: <RiGlobalLine className="text-lg" />,
   subcategories: [
+    // 基础数据（价格信息最重要）
     {
-      id: 'web3-jobs',
-      name: 'Web3 工作',
-      description: '区块链和Web3相关工作机会',
+      id: 'basic-crypto',
+      name: '基础数据',
+      description: '基础数据查询平台',
       websites: [
         {
-          name: 'Web3.Career',
-          url: 'https://web3.career/',
-          description: '专注于Web3、区块链和加密货币领域的招聘网站',
-          icon: 'https://www.google.com/s2/favicons?domain=web3.career&sz=64',
+          name: 'CoinMarketCap',
+          url: 'https://coinmarketcap.com',
+          description: '币圈入门必备，最权威的价格数据源，老韭菜都在用',
+          icon: 'https://www.google.com/s2/favicons?domain=coinmarketcap.com&sz=64',
         },
         {
-          name: 'ABetterWeb3',
-          url: 'https://abetterweb3.notion.site/',
-          description: 'Web3求职资源整合平台，包含职位列表和行业资讯',
-          icon: 'https://www.google.com/s2/favicons?domain=notion.site&sz=64',
+          name: 'CoinGecko',
+          url: 'https://www.coingecko.com',
+          description: 'CMC的最强竞争对手，数据更全面，DeFi数据更详细',
+          icon: 'https://www.google.com/s2/favicons?domain=coingecko.com&sz=64',
+        },
+        {
+          name: 'Crypto Bubbles',
+          url: 'https://cryptobubbles.net',
+          description: '市场情绪可视化神器，泡沫图看涨跌一目了然',
+          icon: 'https://www.google.com/s2/favicons?domain=cryptobubbles.net&sz=64',
         },
       ],
     },
-    // 从tutorial.tsx添加的内容
-    {
-      id: 'beginner-guide',
-      name: '链上入门',
-      description: '区块链基础知识教程',
-      websites: [
-        {
-          name: '从二级到链上（入门指南）',
-          url: 'https://threadreaderapp.com/thread/1854423667842953534.html',
-          description: '全面的区块链入门指南，从基础概念到实际操作',
-          icon: 'https://www.google.com/s2/favicons?domain=threadreaderapp.com&sz=64',
-        },
-        {
-          name: '链上交易系列课程',
-          url: 'https://www.youtube.com/@cryptokris666/playlists',
-          description: '专业的链上交易教程，从入门到精通',
-          icon: 'https://www.google.com/s2/favicons?domain=youtube.com&sz=64',
-        },
-        {
-          name: 'Web3 101',
-          url: 'https://www.youtube.com/@Web3101cast',
-          description: 'Web3基础知识科普，适合零基础用户',
-          icon: 'https://www.google.com/s2/favicons?domain=youtube.com&sz=64',
-        },
-        {
-          name: 'Blockchain 学习路线图',
-          url: 'https://roadmap.sh/blockchain',
-          description: '完整的区块链开发学习路径，从入门到专业开发者',
-          icon: 'https://www.google.com/s2/favicons?domain=roadmap.sh&sz=64',
-        },
-      ],
-    },
-    // 从news-media.tsx添加的内容
-    {
-      id: 'comprehensive-news',
-      name: '综合资讯',
-      description: '全面的区块链新闻报道',
-      websites: [
-        {
-          name: 'TechFlow 深潮',
-          url: 'https://techflow.app',
-          description: '币圈深度报道扛把子，专挖行业内幕和黑幕',
-          icon: 'https://www.google.com/s2/favicons?domain=techflow.app&sz=64',
-        },
-        {
-          name: 'Foresight News',
-          url: 'https://foresightnews.pro',
-          description: '前瞻性很强的媒体，经常能提前报道重要消息',
-          icon: 'https://www.google.com/s2/favicons?domain=foresightnews.pro&sz=64',
-        },
-        {
-          name: 'Odaily 星球日报',
-          url: 'https://www.odaily.news',
-          description: '老牌币圈媒体，消息可靠，币圈人日常刷新闻首选',
-          icon: 'https://www.google.com/s2/favicons?domain=odaily.news&sz=64',
-        },
-      ],
-    },
-    {
-      id: 'specialized-media',
-      name: '专业媒体',
-      description: '专业深度的区块链媒体',
-      websites: [
-        {
-          name: 'BlockBeats',
-          url: 'https://www.theblockbeats.info',
-          description: '专注市场动态，快讯及时，短线交易者必备信息源',
-          icon: 'https://www.google.com/s2/favicons?domain=theblockbeats.info&sz=64',
-        },
-        {
-          name: 'PANews 中文新闻频道',
-          url: 'https://www.panewslab.com',
-          description: '专业区块链新闻，报道客观中立，深度分析质量高',
-          icon: 'https://www.google.com/s2/favicons?domain=panewslab.com&sz=64',
-        },
-        {
-          name: '吴说区块链',
-          url: 'https://www.wu-talk.com',
-          description: '吴忌寒创办，币圈影响力大，独家爆料和深度调查',
-          icon: 'https://www.google.com/s2/favicons?domain=wu-talk.com&sz=64',
-        },
-      ],
-    },
-    // 从trading-tools.tsx添加的内容
+    // 交易工具（交易是重要活动）
     {
       id: 'dex-tools',
       name: '交易工具',
@@ -141,6 +65,7 @@ export const web3: Category = {
         },
       ],
     },
+    // 安全工具（安全非常重要）
     {
       id: 'security-bots',
       name: '安全与机器人',
@@ -172,31 +97,7 @@ export const web3: Category = {
         },
       ],
     },
-    {
-      id: 'basic-crypto',
-      name: '基础数据',
-      description: '基础数据查询平台',
-      websites: [
-        {
-          name: 'CoinMarketCap',
-          url: 'https://coinmarketcap.com',
-          description: '币圈入门必备，最权威的价格数据源，老韭菜都在用',
-          icon: 'https://www.google.com/s2/favicons?domain=coinmarketcap.com&sz=64',
-        },
-        {
-          name: 'CoinGecko',
-          url: 'https://www.coingecko.com',
-          description: 'CMC的最强竞争对手，数据更全面，DeFi数据更详细',
-          icon: 'https://www.google.com/s2/favicons?domain=coingecko.com&sz=64',
-        },
-        {
-          name: 'Crypto Bubbles',
-          url: 'https://cryptobubbles.net',
-          description: '市场情绪可视化神器，泡沫图看涨跌一目了然',
-          icon: 'https://www.google.com/s2/favicons?domain=cryptobubbles.net&sz=64',
-        },
-      ],
-    },
+    // 进阶数据（深度分析工具）
     {
       id: 'advanced-data',
       name: '进阶数据',
@@ -222,6 +123,7 @@ export const web3: Category = {
         },
       ],
     },
+    // 数据可视化
     {
       id: 'data-dashboard',
       name: '数据面板',
@@ -247,7 +149,111 @@ export const web3: Category = {
         },
       ],
     },
-    // 从airdrop.tsx添加的内容
+    // 新闻资讯（跟踪行业动态）
+    {
+      id: 'comprehensive-news',
+      name: '综合资讯',
+      description: '全面的区块链新闻报道',
+      websites: [
+        {
+          name: 'TechFlow 深潮',
+          url: 'https://techflow.app',
+          description: '币圈深度报道扛把子，专挖行业内幕和黑幕',
+          icon: 'https://www.google.com/s2/favicons?domain=techflow.app&sz=64',
+        },
+        {
+          name: 'Foresight News',
+          url: 'https://foresightnews.pro',
+          description: '前瞻性很强的媒体，经常能提前报道重要消息',
+          icon: 'https://www.google.com/s2/favicons?domain=foresightnews.pro&sz=64',
+        },
+        {
+          name: 'Odaily 星球日报',
+          url: 'https://www.odaily.news',
+          description: '老牌币圈媒体，消息可靠，币圈人日常刷新闻首选',
+          icon: 'https://www.google.com/s2/favicons?domain=odaily.news&sz=64',
+        },
+      ],
+    },
+    // 专业媒体
+    {
+      id: 'specialized-media',
+      name: '专业媒体',
+      description: '专业深度的区块链媒体',
+      websites: [
+        {
+          name: 'BlockBeats',
+          url: 'https://www.theblockbeats.info',
+          description: '专注市场动态，快讯及时，短线交易者必备信息源',
+          icon: 'https://www.google.com/s2/favicons?domain=theblockbeats.info&sz=64',
+        },
+        {
+          name: 'PANews 中文新闻频道',
+          url: 'https://www.panewslab.com',
+          description: '专业区块链新闻，报道客观中立，深度分析质量高',
+          icon: 'https://www.google.com/s2/favicons?domain=panewslab.com&sz=64',
+        },
+        {
+          name: '吴说区块链',
+          url: 'https://www.wu-talk.com',
+          description: '吴忌寒创办，币圈影响力大，独家爆料和深度调查',
+          icon: 'https://www.google.com/s2/favicons?domain=wu-talk.com&sz=64',
+        },
+      ],
+    },
+    // 链上入门（放在这里方便新用户）
+    {
+      id: 'beginner-guide',
+      name: '链上入门',
+      description: '区块链基础知识教程',
+      websites: [
+        {
+          name: '从二级到链上（入门指南）',
+          url: 'https://threadreaderapp.com/thread/1854423667842953534.html',
+          description: '全面的区块链入门指南，从基础概念到实际操作',
+          icon: 'https://www.google.com/s2/favicons?domain=threadreaderapp.com&sz=64',
+        },
+        {
+          name: '链上交易系列课程',
+          url: 'https://www.youtube.com/@cryptokris666/playlists',
+          description: '专业的链上交易教程，从入门到精通',
+          icon: 'https://www.google.com/s2/favicons?domain=youtube.com&sz=64',
+        },
+        {
+          name: 'Web3 101',
+          url: 'https://www.youtube.com/@Web3101cast',
+          description: 'Web3基础知识科普，适合零基础用户',
+          icon: 'https://www.google.com/s2/favicons?domain=youtube.com&sz=64',
+        },
+        {
+          name: 'Blockchain 学习路线图',
+          url: 'https://roadmap.sh/blockchain',
+          description: '完整的区块链开发学习路径，从入门到专业开发者',
+          icon: 'https://www.google.com/s2/favicons?domain=roadmap.sh&sz=64',
+        },
+      ],
+    },
+    // Web3工作
+    {
+      id: 'web3-jobs',
+      name: 'Web3 工作',
+      description: '区块链和Web3相关工作机会',
+      websites: [
+        {
+          name: 'Web3.Career',
+          url: 'https://web3.career/',
+          description: '专注于Web3、区块链和加密货币领域的招聘网站',
+          icon: 'https://www.google.com/s2/favicons?domain=web3.career&sz=64',
+        },
+        {
+          name: 'ABetterWeb3',
+          url: 'https://abetterweb3.notion.site/',
+          description: 'Web3求职资源整合平台，包含职位列表和行业资讯',
+          icon: 'https://www.google.com/s2/favicons?domain=notion.site&sz=64',
+        },
+      ],
+    },
+    // 链游
     {
       id: 'chain-games',
       name: '链游',
