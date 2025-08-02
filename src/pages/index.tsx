@@ -25,7 +25,7 @@ export default function Home() {
       </div>
 
       {/* 主布局 */}
-      <div className="relative z-10 min-h-screen flex gap-[3px]">
+      <div className="relative z-10 h-screen flex gap-[3px]">
         <LeftSidebar categories={categories} />
         <RightContent currentCategory={currentCategory} />
       </div>

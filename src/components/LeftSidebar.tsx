@@ -13,14 +13,10 @@ interface LeftSidebarProps {
 // 图标颜色映射
 const iconColors: Record<string, string> = {
   dashboard: '#00ffff', // 青色 - 看板
-  tutorial: '#FFA500', // 橙色 - 新手教程
   'chain-data': '#4AFF8C', // 绿色 - 数据
-  'news-media': '#FFD166', // 黄色 - 新闻
-  'trading-tools': '#FFD700', // 金色 - 打狗
-  'crypto-bloggers': '#9C6EFF', // 紫色 - 博主
   'ai-navigation': '#FF6B6B', // 红色 - AI 导航
   tools: '#4FC3F7', // 浅蓝色 - 工具
-  airdrop: '#FFA500', // 橙色 - 空投撸白
+  'platform-services': '#00BCD4', // 蓝绿色 - 平台服务
   seo: '#3F51B5', // 靛蓝色 - SEO
   games: '#76FF03', // 亮绿色 - 游戏
   web3: '#29B6F6', // 天蓝色 - WEB3
