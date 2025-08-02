@@ -7,6 +7,7 @@ import PlatformServicesSection from './PlatformServicesSection';
 import SEOSection from './SEOSection';
 import GamesSection from './GamesSection';
 import Web3Section from './Web3Section';
+import JobsSection from './JobsSection';
 
 interface RightContentProps {
   currentCategory: Category | undefined;
@@ -21,6 +22,7 @@ const iconColors: Record<string, string> = {
   seo: '#3F51B5', // 靛蓝色 - SEO
   games: '#76FF03', // 亮绿色 - 游戏
   web3: '#29B6F6', // 天蓝色 - WEB3
+  jobs: '#FF9800', // 橙色 - 找工作
 };
 
 export default function RightContent({ currentCategory }: RightContentProps) {
@@ -50,6 +52,8 @@ export default function RightContent({ currentCategory }: RightContentProps) {
         return <GamesSection category={currentCategory} />;
       case 'web3':
         return <Web3Section category={currentCategory} />;
+      case 'jobs':
+        return <JobsSection category={currentCategory} />;
       case 'dashboard':
         return <DashboardSection />;
       default:

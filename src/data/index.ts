@@ -6,6 +6,7 @@ import { platformServices } from './platform-services'
 import { seo } from './seo'
 import { games } from './games'
 import { web3 } from './web3'
+import { jobs } from './jobs'
 
 export const categories = [
   dashboard,
@@ -15,6 +16,7 @@ export const categories = [
   seo,
   games,
   web3,
+  jobs,
 ]
 
-export { dashboard, aiNavigation, tools, platformServices, seo, games, web3 } 
+export { dashboard, aiNavigation, tools, platformServices, seo, games, web3, jobs } 

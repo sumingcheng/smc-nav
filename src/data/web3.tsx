@@ -233,26 +233,7 @@ export const web3: Category = {
         },
       ],
     },
-    // Web3工作
-    {
-      id: 'web3-jobs',
-      name: 'Web3 工作',
-      description: '区块链和Web3相关工作机会',
-      websites: [
-        {
-          name: 'Web3.Career',
-          url: 'https://web3.career/',
-          description: '专注于Web3、区块链和加密货币领域的招聘网站',
-          icon: 'https://www.google.com/s2/favicons?domain=web3.career&sz=64',
-        },
-        {
-          name: 'ABetterWeb3',
-          url: 'https://abetterweb3.notion.site/',
-          description: 'Web3求职资源整合平台，包含职位列表和行业资讯',
-          icon: 'https://www.google.com/s2/favicons?domain=notion.site&sz=64',
-        },
-      ],
-    },
+    // 已移至找工作分类
     // 链游
     {
       id: 'chain-games',
