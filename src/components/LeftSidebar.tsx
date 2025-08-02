@@ -211,7 +211,7 @@ export default function LeftSidebar({ categories }: LeftSidebarProps) {
 
           {/* GitHub链接 */}
           <a
-            href="https://github.com/sumingcheng/dogfight-hub"
+            href="https://github.com/sumingcheng/smc-nav"
             target="_blank"
             rel="noopener noreferrer"
             className={`flex items-center p-2 rounded-md hover:bg-[#1A1C2F]/50 transition-colors text-[#a0a0a0] hover:text-[#e7e9ea] w-full text-left ${

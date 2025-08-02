@@ -30,10 +30,10 @@ const nextConfig = {
   trailingSlash: true,
   
   // 基础路径配置（GitHub Pages需要）
-  basePath: process.env.NODE_ENV === 'production' ? '/dogfight-hub' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '/smc-nav' : '',
   
   // 资源路径配置
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/dogfight-hub/' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/smc-nav/' : '',
 };
 
 module.exports = nextConfig; 
