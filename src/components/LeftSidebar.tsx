@@ -21,6 +21,7 @@ const iconColors: Record<string, string> = {
   'ai-navigation': '#FF6B6B', // 红色 - AI 导航
   'tools': '#4FC3F7', // 浅蓝色 - 工具
   'airdrop': '#FFA500', // 橙色 - 空投撸白
+  'seo': '#3F51B5', // 靛蓝色 - SEO
 };
 
 export default function LeftSidebar({ categories }: LeftSidebarProps) {

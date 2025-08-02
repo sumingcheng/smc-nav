@@ -9,6 +9,7 @@ import AINavigationSection from './AINavigationSection';
 import ToolsSection from './ToolsSection';
 import AirdropSection from './AirdropSection';
 import PlatformServicesSection from './PlatformServicesSection';
+import SEOSection from './SEOSection';
 
 interface RightContentProps {
   currentCategory: Category | undefined;
@@ -25,6 +26,7 @@ const iconColors: Record<string, string> = {
   tools: '#4FC3F7', // 浅蓝色 - 工具
   airdrop: '#FFA500', // 橙色 - 空投撸白
   'platform-services': '#00BCD4', // 蓝绿色 - 平台服务
+  'seo': '#3F51B5', // 靛蓝色 - SEO
 };
 
 export default function RightContent({ currentCategory }: RightContentProps) {
@@ -58,6 +60,8 @@ export default function RightContent({ currentCategory }: RightContentProps) {
         return <AirdropSection category={currentCategory} />;
       case 'platform-services':
         return <PlatformServicesSection category={currentCategory} />;
+      case 'seo':
+        return <SEOSection category={currentCategory} />;
       case 'dashboard':
         return <DashboardSection />;
       default:
