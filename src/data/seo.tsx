@@ -32,5 +32,18 @@ export const seo: Category = {
         },
       ],
     },
+    {
+      id: 'website-performance',
+      name: '网站性能与安全',
+      description: '网站加速、优化与安全防护工具',
+      websites: [
+        {
+          name: 'Cloudflare Dashboard',
+          url: 'https://dash.cloudflare.com/',
+          description: 'CDN、DNS管理、DDoS防护和网站性能优化平台',
+          icon: 'https://www.google.com/s2/favicons?domain=cloudflare.com&sz=64',
+        },
+      ],
+    },
   ],
 };
