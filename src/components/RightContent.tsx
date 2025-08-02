@@ -1,4 +1,4 @@
-import * as Separator from '@radix-ui/react-separator';
+// 已移除未使用的导入
 import { Category } from '../types';
 import DashboardSection from './DashboardSection';
 import AINavigationSection from './AINavigationSection';
@@ -18,9 +18,9 @@ const iconColors: Record<string, string> = {
   'ai-navigation': '#FF6B6B', // 红色 - AI 导航
   tools: '#4FC3F7', // 浅蓝色 - 工具
   'platform-services': '#00BCD4', // 蓝绿色 - 平台服务
-  'seo': '#3F51B5', // 靛蓝色 - SEO
-  'games': '#76FF03', // 亮绿色 - 游戏
-  'web3': '#29B6F6', // 天蓝色 - WEB3
+  seo: '#3F51B5', // 靛蓝色 - SEO
+  games: '#76FF03', // 亮绿色 - 游戏
+  web3: '#29B6F6', // 天蓝色 - WEB3
 };
 
 export default function RightContent({ currentCategory }: RightContentProps) {
@@ -77,9 +77,7 @@ export default function RightContent({ currentCategory }: RightContentProps) {
 
       {/* 内容区域 - 可滚动，内容少时也占满空间 */}
       <div className="flex-1 overflow-y-auto p-4 flex flex-col min-h-0">
-        <div className="flex-1">
-          {renderContent()}
-        </div>
+        <div className="flex-1">{renderContent()}</div>
       </div>
     </div>
   );
