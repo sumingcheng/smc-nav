@@ -18,6 +18,12 @@ export const games: Category = {
           description: '浏览器可以直接玩，无需下载，真离谱啊',
           icon: 'https://www.google.com/s2/favicons?domain=chronodivide.com&sz=64',
         },
+        {
+          name: '游戏机实验室',
+          url: 'https://www.yikm.net/',
+          description: '在线玩红白机、GBA等经典游戏，无需下载和安装',
+          icon: 'https://www.google.com/s2/favicons?domain=yikm.net&sz=64',
+        },
       ],
     },
   ],
