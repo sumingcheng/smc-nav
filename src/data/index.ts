@@ -10,6 +10,7 @@ import { airdrop } from './airdrop'
 import { platformServices } from './platform-services'
 import { seo } from './seo'
 import { games } from './games'
+import { web3 } from './web3'
 
 export const categories = [
   dashboard,
@@ -23,6 +24,7 @@ export const categories = [
   platformServices,
   seo,
   games,
+  web3,
 ]
 
-export { dashboard, tutorial, newsMedia, tradingTools, cryptoBloggers, aiNavigation, tools, airdrop, platformServices, seo, games } 
+export { dashboard, tutorial, newsMedia, tradingTools, cryptoBloggers, aiNavigation, tools, airdrop, platformServices, seo, games, web3 } 

@@ -23,6 +23,7 @@ const iconColors: Record<string, string> = {
   airdrop: '#FFA500', // 橙色 - 空投撸白
   seo: '#3F51B5', // 靛蓝色 - SEO
   games: '#76FF03', // 亮绿色 - 游戏
+  web3: '#29B6F6', // 天蓝色 - WEB3
 };
 
 export default function LeftSidebar({ categories }: LeftSidebarProps) {
