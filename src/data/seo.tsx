@@ -45,5 +45,18 @@ export const seo: Category = {
         },
       ],
     },
+    {
+      id: 'website-monetization',
+      name: '网站变现',
+      description: '',
+      websites: [
+        {
+          name: 'Google AdSense',
+          url: 'https://adsense.google.com/',
+          description: '谷歌广告联盟平台，帮助网站所有者通过展示相关广告实现内容变现',
+          icon: 'https://www.google.com/s2/favicons?domain=google.com&sz=64',
+        },
+      ],
+    },
   ],
 };
