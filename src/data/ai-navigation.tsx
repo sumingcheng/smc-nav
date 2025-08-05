@@ -48,6 +48,18 @@ export const aiNavigation: Category = {
           description: 'Perplexity 搜索和问答平台',
           icon: 'https://www.google.com/s2/favicons?domain=perplexity.ai&sz=64',
         },
+        {
+          name: 'AI Code Mirror',
+          url: 'https://www.aicodemirror.com/register?invitecode=JA40CE',
+          description: 'Claude Code 代理商，AI 编程助手镜像服务',
+          icon: 'https://www.google.com/s2/favicons?domain=aicodemirror.com&sz=64',
+        },
+        {
+          name: 'Any Router',
+          url: 'https://anyrouter.top/register?aff=9wG6',
+          description: 'Claude Code 代理商，AI 服务路由平台',
+          icon: 'https://www.google.com/s2/favicons?domain=anyrouter.top&sz=64',
+        },
       ],
     },
     {
