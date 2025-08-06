@@ -20,5 +20,24 @@ export const platformServices: Category = {
         },
       ],
     },
+    {
+      id: 'developer-services',
+      name: '开发者服务',
+      description: '面向开发者的各类平台与工具资源',
+      websites: [
+        {
+          name: 'Lemon Squeezy',
+          url: 'https://app.lemonsqueezy.com/dashboard',
+          description: '为开发者和创作者提供数字产品销售、订阅和授权服务的平台。',
+          icon: 'https://www.google.com/s2/favicons?domain=lemonsqueezy.com&sz=64',
+        },
+        {
+          name: 'Indie Hacker Tools',
+          url: 'https://github.com/weijunext/indie-hacker-tools',
+          description: '独立开发者必备工具集合，涵盖开发、设计、营销等多个方面。',
+          icon: 'https://www.google.com/s2/favicons?domain=github.com&sz=64',
+        },
+      ],
+    },
   ],
 };
