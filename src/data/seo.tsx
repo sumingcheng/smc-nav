@@ -30,6 +30,18 @@ export const seo: Category = {
           description: '基于Reddit社区挖掘关键词的工具，助力内容营销与SEO策略',
           icon: 'https://www.google.com/s2/favicons?domain=highervisibility.com&sz=64',
         },
+        {
+          name: 'Google Search Console',
+          url: 'https://search.google.com/search-console',
+          description: '谷歌提供的免费工具，用于监控网站在谷歌搜索中的表现、解决问题并优化排名',
+          icon: 'https://www.google.com/s2/favicons?domain=google.com&sz=64',
+        },
+        {
+          name: 'Bing Webmaster Tools',
+          url: 'https://www.bing.com/webmasters',
+          description: '必应网站管理员工具，帮助您将网站添加到必应索引中，并查看您网站的性能数据',
+          icon: 'https://www.google.com/s2/favicons?domain=bing.com&sz=64',
+        },
       ],
     },
     {
