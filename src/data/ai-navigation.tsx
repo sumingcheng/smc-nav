@@ -60,6 +60,18 @@ export const aiNavigation: Category = {
           description: 'Claude Code 代理商，AI 服务路由平台',
           icon: 'https://www.google.com/s2/favicons?domain=anyrouter.top&sz=64',
         },
+        {
+          name: 'PygmalionAI',
+          url: 'https://pygmalion.chat/chat',
+          description: '社区驱动的AI角色扮演聊天平台',
+          icon: 'https://www.google.com/s2/favicons?domain=pygmalion.chat&sz=64',
+        },
+        {
+          name: 'Character.AI',
+          url: 'https://character.ai/',
+          description: '与AI角色进行对话和互动的平台',
+          icon: 'https://www.google.com/s2/favicons?domain=character.ai&sz=64',
+        },
       ],
     },
     {
@@ -153,6 +165,25 @@ export const aiNavigation: Category = {
           url: 'https://docs.anthropic.com/en/docs/intro',
           description: 'Anthropic Claude AI 官方文档和 API 指南',
           icon: 'https://www.google.com/s2/favicons?domain=docs.anthropic.com&sz=64',
+        },
+      ],
+    },
+    {
+      id: 'prompt-engineering',
+      name: '提示词工程',
+      description: '提示词相关的工具、社区和指南',
+      websites: [
+        {
+          name: 'FlowGPT',
+          url: 'https://flowgpt.com/',
+          description: '发现、分享和使用最佳AI提示词的社区平台',
+          icon: 'https://www.google.com/s2/favicons?domain=flowgpt.com&sz=64',
+        },
+        {
+          name: 'OpenAI Prompting Guide',
+          url: 'https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-the-openai-api',
+          description: 'OpenAI 官方提供的提示词工程最佳实践指南',
+          icon: 'https://www.google.com/s2/favicons?domain=openai.com&sz=64',
         },
       ],
     },
