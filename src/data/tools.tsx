@@ -82,9 +82,9 @@ export const tools: Category = {
           icon: 'https://www.google.com/s2/favicons?domain=devhints.io&sz=64',
         },
         {
-          name: '编程教程',
+          name: 'Docker镜像源汇总',
           url: 'https://www.coderjia.cn/archives/dba3f94c-a021-468a-8ac6-e840f85867ea',
-          description: '编程学习资源与技术教程',
+          description: '目前国内可用Docker镜像源汇总',
           icon: 'https://www.google.com/s2/favicons?domain=coderjia.cn&sz=64',
         },
       ],
