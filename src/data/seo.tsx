@@ -70,5 +70,24 @@ export const seo: Category = {
         },
       ],
     },
+    {
+      id: 'seo-learning',
+      name: 'SEO学习与指南',
+      description: '',
+      websites: [
+        {
+          name: 'Google SEO 指南',
+          url: 'https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=zh-cn',
+          description: '谷歌官方提供的搜索引擎优化入门指南，帮助您了解SEO基础知识和最佳实践',
+          icon: 'https://www.google.com/s2/favicons?domain=google.com&sz=64',
+        },
+        {
+          name: 'Shopify SEO 优化指南',
+          url: 'https://www.shopify.com/zh/blog/seo-checklist-online-store',
+          description: 'Shopify 提供的终极SEO优化清单，包含38个实用技巧，助力网站流量增长',
+          icon: 'https://www.google.com/s2/favicons?domain=shopify.com&sz=64',
+        },
+      ],
+    },
   ],
 };
