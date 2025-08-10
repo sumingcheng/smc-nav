@@ -45,5 +45,18 @@ export const jobs: Category = {
         },
       ],
     },
+    {
+      id: 'salary-resources',
+      name: '薪资资源',
+      description: '了解薪资水平和福利待遇',
+      websites: [
+        {
+          name: 'Levels.fyi',
+          url: 'https://www.levels.fyi/',
+          description: '提供详细的薪资数据和职位信息，帮助了解大公司薪资标准',
+          icon: 'https://www.google.com/s2/favicons?domain=levels.fyi&sz=64',
+        },
+      ],
+    },
   ],
 };
