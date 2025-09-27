@@ -1,31 +1,30 @@
-# 🚀 smc-nav
+# smc-nav
 
-> AI + WEB3 导航，支持个人看板定制，支持拖拽排序
+> AI + WEB3 Navigation Platform with Personal Dashboard Customization and Drag-and-Drop Sorting
 
-## ✨ 功能特色
+## Features
 
-- **个人看板** - 自定义导航面板
-- **LLM** - AI工具与资源
-- **实用工具** - 效率与开发工具
-- **平台服务** - 各类平台与服务
-- **SEO** - 搜索引擎优化资源
-- **游戏资源** - 游戏与娱乐内容
-- **WEB3 导航** - 区块链与加密货币资源
+- **Personal Dashboard** - Customizable navigation panel
+- **LLM** - AI tools and resources
+- **Utility Tools** - Productivity and development tools
+- **Platform Services** - Various platforms and services
+- **SEO** - Search engine optimization resources
+- **Gaming Resources** - Gaming and entertainment content
+- **WEB3 Navigation** - Blockchain and cryptocurrency resources
 
-## 🛠️ 技术栈
+## Tech Stack
 
-- **前端**: Next.js + TypeScript + React
-- **状态管理**: Zustand
-- **样式**: Tailwind CSS
-- **UI 组件**: Radix UI + React Icons
+- **Frontend**: Next.js + TypeScript + React
+- **State Management**: Zustand
+- **Styling**: Tailwind CSS
+- **UI Components**: Radix UI + React Icons
 
-## 🚀 快速开始
+## Quick Start
 
 ```bash
-# 安装依赖
+# Install dependencies
 pnpm install
 
-# 启动开发服务器
+# Start development server
 pnpm dev
 ```
-
