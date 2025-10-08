@@ -5,7 +5,7 @@
 ## Features
 
 - **Personal Dashboard** - Customizable navigation panel
-- **LLM** - AI tools and resources
+- **AI Nav** - AI tools and resources
 - **Utility Tools** - Productivity and development tools
 - **Platform Services** - Various platforms and services
 - **SEO** - Search engine optimization resources
