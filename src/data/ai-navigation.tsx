@@ -131,6 +131,12 @@ export const aiNavigation: Category = {
           icon: "https://www.google.com/s2/favicons?domain=context7.com&sz=64",
         },
         {
+          name: "Novita AI",
+          url: "https://novita.ai/?utm_source=moge.ai",
+          description: "提供大模型 API、GPU 云与模型托管的一体化平台",
+          icon: "https://www.google.com/s2/favicons?domain=novita.ai&sz=64",
+        },
+        {
           name: "Firebase",
           url: "https://firebase.google.com/?hl=zh-cn",
           description: "Google 应用开发平台，提供 ML Kit 与生成式 AI 支持",
