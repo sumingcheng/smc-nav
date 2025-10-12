@@ -1,4 +1,3 @@
-// 已移除未使用的导入
 import { Category } from '../types';
 import DashboardSection from './DashboardSection';
 import AINavigationSection from './AINavigationSection';
@@ -8,6 +7,7 @@ import SEOSection from './SEOSection';
 import GamesSection from './GamesSection';
 import Web3Section from './Web3Section';
 import JobsSection from './JobsSection';
+import { useTranslate } from '../i18n';
 
 interface RightContentProps {
   currentCategory: Category | undefined;
@@ -26,6 +26,8 @@ const iconColors: Record<string, string> = {
 };
 
 export default function RightContent({ currentCategory }: RightContentProps) {
+  const t = useTranslate();
+
   if (!currentCategory) {
     return (
       <div className="flex-1 min-w-0 flex items-center justify-center">
@@ -73,8 +75,8 @@ export default function RightContent({ currentCategory }: RightContentProps) {
             {currentCategory.icon}
           </div>
           <div>
-            <h1 className="text-sm font-medium text-white">{currentCategory.name}</h1>
-            <p className="text-xs text-[#a0a0a0]">{currentCategory.description}</p>
+            <h1 className="text-sm font-medium text-white">{t(currentCategory.name)}</h1>
+            <p className="text-xs text-[#a0a0a0]">{t(currentCategory.description)}</p>
           </div>
         </div>
       </div>

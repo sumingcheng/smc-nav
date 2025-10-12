@@ -5,6 +5,7 @@ import { useState } from 'react';
 import toast from 'react-hot-toast';
 import { RiCheckLine, RiCopperCoinLine, RiFileCopyLine, RiGithubLine } from 'react-icons/ri';
 import { Category } from '../types';
+import { useLocale, useTranslate } from '../i18n';
 
 interface LeftSidebarProps {
   categories: Category[];
@@ -25,8 +26,10 @@ const iconColors: Record<string, string> = {
 export default function LeftSidebar({ categories }: LeftSidebarProps) {
   const router = useRouter();
   const [isCollapsed, setIsCollapsed] = useState(false);
-  const [currentLanguage, setCurrentLanguage] = useState<'zh' | 'en'>('zh');
   const [copied, setCopied] = useState(false);
+  const locale = useLocale((state) => state.locale);
+  const setLocale = useLocale((state) => state.setLocale);
+  const t = useTranslate();
 
   // 获取当前活跃的分类
   const getActiveCategory = () => {
@@ -40,8 +43,7 @@ export default function LeftSidebar({ categories }: LeftSidebarProps) {
   const solanaAddress = '6JqeXLFe2W6fVzX8awKnSVJoda13EzQwmQzSW7eynpUT';
 
   const handleLanguageToggle = () => {
-    setCurrentLanguage((prev) => (prev === 'zh' ? 'en' : 'zh'));
-    // TODO: 实际的语言切换逻辑
+    setLocale(locale === 'zh' ? 'en' : 'zh');
   };
 
   const copyToClipboard = async () => {
@@ -110,7 +112,7 @@ export default function LeftSidebar({ categories }: LeftSidebarProps) {
                     ? `bg-[#1A1C2F] text-white shadow-sm ${isCollapsed ? '' : 'translate-x-1'}`
                     : `text-[#a0a0a0] hover:bg-[#1A1C2F]/50 hover:text-[#e7e9ea] ${isCollapsed ? '' : 'hover:translate-x-1'}`
                 }`}
-                title={isCollapsed ? category.name : ''}
+                title={isCollapsed ? t(category.name) : ''}
               >
                 <div
                   className={`transition-transform duration-200 ${activeCategory === category.id ? 'scale-110' : ''} flex items-center justify-center w-5 h-5`}
@@ -118,7 +120,7 @@ export default function LeftSidebar({ categories }: LeftSidebarProps) {
                 >
                   {category.icon}
                 </div>
-                {!isCollapsed && <span className="font-medium text-sm truncate">{category.name}</span>}
+                {!isCollapsed && <span className="font-medium text-sm truncate">{t(category.name)}</span>}
                 {activeCategory === category.id && <div className="absolute left-0 w-1 h-6 rounded-r" style={{ backgroundColor: IconColor }} />}
               </Link>
             );
@@ -228,17 +230,17 @@ export default function LeftSidebar({ categories }: LeftSidebarProps) {
             className={`flex items-center p-2 rounded-md hover:bg-[#1A1C2F]/50 transition-all duration-200 text-[#a0a0a0] hover:text-[#e7e9ea] w-full text-left hover:scale-105 cursor-pointer ${
               isCollapsed ? 'justify-center' : ''
             }`}
-            title={isCollapsed ? `${currentLanguage === 'zh' ? '切换至English' : 'Switch to 中文'}` : ''}
+            title={isCollapsed ? `${locale === 'zh' ? '切换至English' : 'Switch to 中文'}` : ''}
           >
             <div className="flex items-center justify-center w-5 h-5" style={{ color: '#9C6EFF' }}>
               <span className="text-sm">🌐</span>
             </div>
             {!isCollapsed && (
               <div className="ml-3 flex items-center space-x-2">
-                <span className="text-sm font-medium">{currentLanguage === 'zh' ? '中文' : 'English'}</span>
+                <span className="text-sm font-medium">{locale === 'zh' ? '中文' : 'English'}</span>
                 <div className="flex items-center space-x-1">
-                  <div className={`w-1 h-1 rounded-full transition-colors ${currentLanguage === 'zh' ? 'bg-cyan-400' : 'bg-[#64748B]'}`} />
-                  <div className={`w-1 h-1 rounded-full transition-colors ${currentLanguage === 'en' ? 'bg-cyan-400' : 'bg-[#64748B]'}`} />
+                  <div className={`w-1 h-1 rounded-full transition-colors ${locale === 'zh' ? 'bg-cyan-400' : 'bg-[#64748B]'}`} />
+                  <div className={`w-1 h-1 rounded-full transition-colors ${locale === 'en' ? 'bg-cyan-400' : 'bg-[#64748B]'}`} />
                 </div>
               </div>
             )}

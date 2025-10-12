@@ -1,23 +1,24 @@
 import { ReactElement } from 'react';
+import { I18nText } from '../i18n';
 
 export interface Website {
-  name: string;
+  name: I18nText;
   url: string;
-  description: string;
+  description: I18nText;
   icon: string;
 }
 
 export interface Subcategory {
   id: string;
-  name: string;
-  description: string;
+  name: I18nText;
+  description: I18nText;
   websites: Website[];
 }
 
 export interface Category {
   id: string;
-  name: string;
-  description: string;
+  name: I18nText;
+  description: I18nText;
   icon: string | ReactElement;
   subcategories: Subcategory[];
 } 
