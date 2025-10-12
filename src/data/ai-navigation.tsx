@@ -85,6 +85,12 @@ export const aiNavigation: Category = {
           description: "Claude 访问路由与分发平台",
           icon: "https://www.google.com/s2/favicons?domain=anyrouter.top&sz=64",
         },
+        {
+          name: "Claude Code Group",
+          url: "https://ctok.ai/claude-code-group",
+          description: "Claude Code 社群入口，获取镜像与使用指南",
+          icon: "https://www.google.com/s2/favicons?domain=ctok.ai&sz=64",
+        },
       ],
     },
     {
