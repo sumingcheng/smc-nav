@@ -31,7 +31,7 @@ export default function RightContent({ currentCategory }: RightContentProps) {
       <div className="flex-1 min-w-0 flex items-center justify-center">
         <div className="text-center">
           <div className="text-6xl mb-4">🤖</div>
-          <h2 className="text-2xl font-bold text-white mb-2">欢迎使用 smc-nav</h2>
+          <h2 className="text-2xl font-bold text-white mb-2">欢迎使用 Custom Nav</h2>
           <p className="text-[#a0a0a0]">请选择左侧菜单开始探索</p>
         </div>
       </div>

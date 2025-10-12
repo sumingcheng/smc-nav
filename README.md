@@ -1,4 +1,4 @@
-# smc-nav
+# Custom Nav
 
 > AI + WEB3 Navigation Platform with Personal Dashboard Customization and Drag-and-Drop Sorting
 

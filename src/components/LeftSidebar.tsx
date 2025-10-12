@@ -68,7 +68,7 @@ export default function LeftSidebar({ categories }: LeftSidebarProps) {
               <div className="w-0.5 h-4 bg-gradient-to-b from-[#8b5cf6] to-[#00ffff] rounded-full opacity-60"></div>
             </div>
             <div className="flex flex-col ml-2">
-              <span className="text-[#e7e9ea] font-semibold text-sm tracking-wide">smc-nav</span>
+              <span className="text-[#e7e9ea] font-semibold text-sm tracking-wide">Custom Nav</span>
               <div className="h-[1px] w-full bg-gradient-to-r from-[#00ffff] to-transparent"></div>
             </div>
           </div>
@@ -151,7 +151,7 @@ export default function LeftSidebar({ categories }: LeftSidebarProps) {
                   <RiCopperCoinLine className="text-2xl text-[#FFD700] mr-2" />
                   支持作者
                 </Dialog.Title>
-                <Dialog.Description className="text-[#a0a0a0] text-sm mb-6">如果 smc-nav 对你有帮助，欢迎通过 Solana 打赏支持！</Dialog.Description>
+                <Dialog.Description className="text-[#a0a0a0] text-sm mb-6">如果 Custom Nav 对你有帮助，欢迎通过 Solana 打赏支持！</Dialog.Description>
 
                 {/* Solana 地址卡片 */}
                 <div className="bg-black/40 rounded-lg p-4 border border-white/10 mb-4">
