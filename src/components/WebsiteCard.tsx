@@ -90,7 +90,7 @@ export default function WebsiteCard({ website, categoryId, isRounded = false, sh
           </div>
           <div className="flex-1 min-w-0">
             <h4 className="text-xs font-medium text-white group-hover:text-white transition-colors truncate mb-1">{websiteName}</h4>
-            <p className="text-xs text-[#a0a0a0] leading-relaxed">{websiteDescription}</p>
+            <p className="text-xs text-[#a0a0a0] leading-relaxed truncate">{websiteDescription}</p>
           </div>
         </div>
       </a>

@@ -3,11 +3,13 @@ import { useState } from 'react';
 import { DashboardItem as DashboardItemType, useDashboardStore } from '../store/dashboardStore';
 import DashboardHeader from './DashboardHeader';
 import DashboardItem from './DashboardItem';
+import { useLocale } from '../i18n';
 
 export default function DashboardSection() {
   const { dashboardItems, removeFromDashboard, reorderDashboard } = useDashboardStore();
   const [draggedItem, setDraggedItem] = useState<DashboardItemType | null>(null);
   const [dragOverItem, setDragOverItem] = useState<string | null>(null);
+  const locale = useLocale((state) => state.locale);
 
   const handleDragStart = (e: React.DragEvent, item: DashboardItemType) => {
     setDraggedItem(item);
@@ -64,8 +66,14 @@ export default function DashboardSection() {
       <div className="space-y-3">
         <div className="bg-black/30 backdrop-blur-sm rounded-lg p-8 border border-white/10 text-center">
           <div className="text-4xl mb-4">📋</div>
-          <h3 className="text-sm font-medium text-white mb-2">看板为空</h3>
-          <p className="text-xs text-[#a0a0a0]">从链上数据、新闻媒体、打狗工具中点击 + 号添加到看板</p>
+          <h3 className="text-sm font-medium text-white mb-2">
+            {locale === 'zh' ? '看板为空' : 'Dashboard is Empty'}
+          </h3>
+          <p className="text-xs text-[#a0a0a0]">
+            {locale === 'zh' 
+              ? '在左侧选择分类，点击卡片上的 + 号添加到个人看板' 
+              : 'Select a category on the left, click the + button on cards to add to your dashboard'}
+          </p>
         </div>
       </div>
     );
