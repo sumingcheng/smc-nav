@@ -53,7 +53,7 @@ export default function DashboardItem({ item, isDragging, isDragOver, onDragStar
           <Tooltip.Trigger asChild>
             <button
               onClick={() => onRemove(item.id)}
-              className="absolute -top-2 -right-2 w-7 h-7 bg-red-500 text-white rounded-full text-xl opacity-0 group-hover:opacity-100 transition-opacity duration-200 hover:bg-red-600 flex items-center justify-center z-10 shadow-md font-medium cursor-pointer"
+              className="absolute -top-2 -right-2 w-6 h-6 bg-red-500 text-white rounded-full text-xl opacity-0 group-hover:opacity-100 transition-opacity duration-200 hover:bg-red-600 flex items-center justify-center z-10 shadow-md font-medium cursor-pointer"
             >
               ×
             </button>
